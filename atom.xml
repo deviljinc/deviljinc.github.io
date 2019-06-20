@@ -2,26 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://deviljinc.github.io</id>
     <title>Coding Forever</title>
-    <updated>2019-06-20T03:36:29.111Z</updated>
+    <updated>2019-06-20T15:44:56.245Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://deviljinc.github.io"/>
     <link rel="self" href="https://deviljinc.github.io/atom.xml"/>
-    <subtitle>求知的道路走了0.001%</subtitle>
+    <subtitle>求知的道路走了0.0001%</subtitle>
     <logo>https://deviljinc.github.io/images/avatar.png</logo>
     <icon>https://deviljinc.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, Coding Forever</rights>
     <entry>
-        <title type="html"><![CDATA[Test]]></title>
-        <id>https://deviljinc.github.io/post/test</id>
-        <link href="https://deviljinc.github.io/post/test">
+        <title type="html"><![CDATA[Hello World]]></title>
+        <id>https://deviljinc.github.io/post/hello-world</id>
+        <link href="https://deviljinc.github.io/post/hello-world">
         </link>
-        <updated>2019-06-20T03:14:08.000Z</updated>
-        <summary type="html"><![CDATA[<p>Hello World</p>
-<p>Hello Vue</p>
+        <updated>2019-06-20T15:39:23.000Z</updated>
+        <summary type="html"><![CDATA[<h4 id="hello-code">Hello Code</h4>
+<h4 id="hello-apple">Hello Apple</h4>
 ]]></summary>
-        <content type="html"><![CDATA[<p>Hello World</p>
-<p>Hello Vue</p>
-<!--more-->
+        <content type="html"><![CDATA[<h4 id="hello-code">Hello Code</h4>
+<h4 id="hello-apple">Hello Apple</h4>
+<!-- more -->
 ]]></content>
     </entry>
     <entry>
