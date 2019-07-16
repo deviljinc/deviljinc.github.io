@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>First web | Coding Forever</title>
-<link rel="shortcut icon" href="https://deviljinc.github.io/favicon.ico?v=1563268514032">
+<link rel="shortcut icon" href="https://deviljinc.github.io/favicon.ico?v=1563288767155">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://deviljinc.github.io/styles/main.css">
@@ -20,7 +20,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://deviljinc.github.io">
-  <img class="avatar" src="https://deviljinc.github.io/images/avatar.png?v=1563268514032" alt="">
+  <img class="avatar" src="https://deviljinc.github.io/images/avatar.png?v=1563288767155" alt="">
   </a>
   <h1 class="site-title">
     Coding Forever
@@ -131,25 +131,28 @@
 
         
           
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-          
-            <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
-<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
-
-<div id="disqus_thread"></div>
+<div id="gitalk-container"></div>
 
 <script>
 
-var options = {
-  shortname: '',
-  apikey: '',
-}
-if ('') {
-  options.api = ''
-}
-var dsqjs = new DisqusJS(options)
+  var gitalk = new Gitalk({
+    clientID: 'c14d8c25335ef5cf272a',
+    clientSecret: 'f125f2dda284a733d8deef78997910adf7a165e5',
+    repo: 'deviljinc.github.io',
+    owner: 'deviljinc',
+    admin: ['deviljinc'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
 
 </script>
+
+          
 
           
         
