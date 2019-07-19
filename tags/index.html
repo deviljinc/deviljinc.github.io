@@ -1,16 +1,16 @@
 <html>
   <head>
   <meta charset="utf-8" />
-<meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Coding Forever</title>
-<link rel="shortcut icon" href="https://deviljinc.github.io/favicon.ico?v=1563456806846">
+<meta name="description" content="求知的道路走了0.0001%" />
+<link rel="shortcut icon" href="https://deviljinc.github.io/favicon.ico?v=1563506053959">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://deviljinc.github.io/styles/main.css">
 
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
@@ -20,7 +20,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://deviljinc.github.io">
-  <img class="avatar" src="https://deviljinc.github.io/images/avatar.png?v=1563456806846" alt="">
+  <img class="avatar" src="https://deviljinc.github.io/images/avatar.png?v=1563506053959" alt="">
   </a>
   <h1 class="site-title">
     Coding Forever
@@ -81,6 +81,16 @@
 
         <div class="tags-container">
           
+            <a class="tag" href="https://deviljinc.github.io/tag/2QtHebaegT">Developer Tools</a>
+          
+            <a class="tag" href="https://deviljinc.github.io/tag/apS0Mn1wt">Mac</a>
+          
+            <a class="tag" href="https://deviljinc.github.io/tag/JtnSHzWjb">macOS</a>
+          
+            <a class="tag" href="https://deviljinc.github.io/tag/PC9-HTkJS">Terminal</a>
+          
+            <a class="tag" href="https://deviljinc.github.io/tag/6CerMqBhv">Visual Studio Code</a>
+          
             <a class="tag" href="https://deviljinc.github.io/tag/vR_zR-QOg">Photoshop</a>
           
             <a class="tag" href="https://deviljinc.github.io/tag/gzf_5U9Jm">Deep Learning</a>
@@ -91,15 +101,11 @@
           
             <a class="tag" href="https://deviljinc.github.io/tag/5mZncS6iI">DC</a>
           
-            <a class="tag" href="https://deviljinc.github.io/tag/6CerMqBhv">Visual Studio Code</a>
-          
             <a class="tag" href="https://deviljinc.github.io/tag/6G_rUagGP">Hadoop</a>
           
             <a class="tag" href="https://deviljinc.github.io/tag/ETavCX1QR">TypeScript</a>
           
             <a class="tag" href="https://deviljinc.github.io/tag/IIc436UwB">Windows</a>
-          
-            <a class="tag" href="https://deviljinc.github.io/tag/JtnSHzWjb">macOS</a>
           
             <a class="tag" href="https://deviljinc.github.io/tag/tVm7IYpnB">Deepin</a>
           
@@ -114,8 +120,6 @@
             <a class="tag" href="https://deviljinc.github.io/tag/GOhCbSoLv">XCode</a>
           
             <a class="tag" href="https://deviljinc.github.io/tag/PHEHf4Spy">SwiftUI</a>
-          
-            <a class="tag" href="https://deviljinc.github.io/tag/PC9-HTkJS">Terminal</a>
           
             <a class="tag" href="https://deviljinc.github.io/tag/fE24FFBjA">macOS Mojave</a>
           
@@ -142,6 +146,44 @@
 
 <script>
   hljs.initHighlightingOnLoad()
+
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      console.log('section.offsetHeight', section.offsetHeight);
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
 </script>
 
       </div>
