@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>小米Pro笔记本 Hackintosh MacOS Mojave 10.14.4 安装教程 | Coding Forever</title>
 <meta name="description" content="求知的道路走了0.0001%" />
-<link rel="shortcut icon" href="https://deviljinc.github.io/favicon.ico?v=1569548861807">
+<link rel="shortcut icon" href="https://deviljinc.github.io/favicon.ico?v=1569683408177">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://deviljinc.github.io/styles/main.css">
@@ -20,7 +20,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://deviljinc.github.io">
-  <img class="avatar" src="https://deviljinc.github.io/images/avatar.png?v=1569548861807" alt="">
+  <img class="avatar" src="https://deviljinc.github.io/images/avatar.png?v=1569683408177" alt="">
   </a>
   <h1 class="site-title">
     Coding Forever
@@ -100,7 +100,7 @@
                 2019-07-25
               </span>
               <span>
-                4 min read
+                10 min read
               </span>
               
                 <a href="https://deviljinc.github.io/tag/RftG_1mN2" class="post-tag">
@@ -270,7 +270,7 @@
 </li>
 <li>
 <p>下载<a href="https://etcher.io/">etcher</a>，打开镜像，选择U盘，点击Flash即可。</p>
-<p><a href="https://7.daliansky.net/etcher.png"><img src="https://7.daliansky.net/etcher.png" alt="etcher"></a></p>
+<figure data-type="image" tabindex="1"><a href="https://7.daliansky.net/etcher.png"><img src="https://7.daliansky.net/etcher.png" alt="etcher"></a></figure>
 </li>
 </ul>
 </li>
@@ -287,42 +287,42 @@
 <p>打开DiskGenius分区软件删除U盘的EFI目录</p>
 </li>
 </ul>
-<p><img src="http://attach.bbs.miui.com/forum/201801/27/204507zdggagiusdgtii06.png" alt="img"></p>
+<figure data-type="image" tabindex="2"><img src="http://attach.bbs.miui.com/forum/201801/27/204507zdggagiusdgtii06.png" alt="img"></figure>
 <ul>
 <li>在DiskGenius分区软件下用快捷键ctrl+v 把新的EFI复制进去</li>
 </ul>
-<p><img src="http://attach.bbs.miui.com/forum/201801/27/204740dccqyfqmmyyda2cc.png" alt="img"></p>
+<figure data-type="image" tabindex="3"><img src="http://attach.bbs.miui.com/forum/201801/27/204740dccqyfqmmyyda2cc.png" alt="img"></figure>
 <ul>
 <li><strong>复制EFI到硬盘的EFI分区</strong></li>
 </ul>
-<p><img src="http://attach.bbs.miui.com/forum/201801/28/190106s4di3zdc4wdxn0yy.png" alt="img"></p>
+<figure data-type="image" tabindex="4"><img src="http://attach.bbs.miui.com/forum/201801/28/190106s4di3zdc4wdxn0yy.png" alt="img"></figure>
 <ul>
 <li>操作完成后目录结构应与下图一致，此处注意Microsoft为windows引导.如何想安装Win10和MacOS双系统，里面文件不要动，否则windows无法引导。</li>
 </ul>
-<p><img src="http://attach.bbs.miui.com/forum/201801/28/190200e8t8y1jbhy1udt26.png" alt="img"></p>
+<figure data-type="image" tabindex="5"><img src="http://attach.bbs.miui.com/forum/201801/28/190200e8t8y1jbhy1udt26.png" alt="img"></figure>
 <h4 id="制作pe"><strong>制作PE</strong></h4>
 <ul>
 <li>在DiskGenius分区软件下操作，右键点击U盘空闲区域建立新分区</li>
 </ul>
-<p><img src="http://attach.bbs.miui.com/forum/201801/30/224138jf0a0ff3l0ut7cyl.png" alt="img"></p>
+<figure data-type="image" tabindex="6"><img src="http://attach.bbs.miui.com/forum/201801/30/224138jf0a0ff3l0ut7cyl.png" alt="img"></figure>
 <ul>
 <li>
 <p>分区格式为FAT32，大小为500M，确定并保存设置</p>
-<p><img src="http://attach.bbs.miui.com/forum/201801/30/224138s0jp1mttufjcjuts.png" alt="img"></p>
+<figure data-type="image" tabindex="7"><img src="http://attach.bbs.miui.com/forum/201801/30/224138s0jp1mttufjcjuts.png" alt="img"></figure>
 </li>
 <li>
 <p><em><strong>注意要安装PE不影响之前做好的macOS安装盘需要把U盘其他分区的盘符隐藏，仅保留刚才创建的500M分区盘符</strong></em> <img src="https://attach.bbs.miui.com/forum/201803/11/140020o5mkstd8vqk2n4h6.png.thumb.jpg" alt="img"></p>
 </li>
 </ul>
-<p><img src="https://attach.bbs.miui.com/forum/201803/11/140020g6yq5ot6xqt67t67.png.thumb.jpg" alt="img"></p>
+<figure data-type="image" tabindex="8"><img src="https://attach.bbs.miui.com/forum/201803/11/140020g6yq5ot6xqt67t67.png.thumb.jpg" alt="img"></figure>
 <ul>
 <li>打开微PE工具箱安装程序选择安装方式为安装到U盘</li>
 </ul>
-<p><img src="https://attach.bbs.miui.com/forum/201801/30/224139ayuoweg7zg0xwwhe.png.thumb.jpg" alt="img"></p>
+<figure data-type="image" tabindex="9"><img src="https://attach.bbs.miui.com/forum/201801/30/224139ayuoweg7zg0xwwhe.png.thumb.jpg" alt="img"></figure>
 <ul>
 <li>如下图安装方式选择<strong>方式三UEFI全能单分区</strong>，<strong>取消勾选格式化</strong>，然后点击安装进U盘</li>
 </ul>
-<p><img src="https://attach.bbs.miui.com/forum/201801/30/224223u0t8ogv8a99q01rv.png.thumb.jpg" alt="img"></p>
+<figure data-type="image" tabindex="10"><img src="https://attach.bbs.miui.com/forum/201801/30/224223u0t8ogv8a99q01rv.png.thumb.jpg" alt="img"></figure>
 <h4 id="添加uefi引导选项"><strong>添加UEFI引导选项</strong></h4>
 <ul>
 <li>
@@ -333,13 +333,13 @@
 <ul>
 <li>
 <p>打开BOOTICE软件,选择物理磁盘,选择欲操作的目标磁盘,点击分区管理,弹出分区管理的窗口,点击分配盘符,为ESP分区分配一个盘符,点击确定</p>
-<p><img src="https://attach.bbs.miui.com/forum/201801/27/205346z63bgb3l6395t9l9.jpg.thumb.jpg" alt="img"></p>
+<figure data-type="image" tabindex="11"><img src="https://attach.bbs.miui.com/forum/201801/27/205346z63bgb3l6395t9l9.jpg.thumb.jpg" alt="img"></figure>
 </li>
 <li>
 <p>选择UEFI,点击修改启动序列,点击添加按钮,菜单标题填写:CLOVER,选择启动文件,在打开的窗口里选择ESP分区下的目录\EFI\CLOVER\CLOVERX64.EFI,选中CLOVER上移到最上面，点击保存当前启动项设置</p>
 </li>
 </ul>
-<p><img src="https://attach.bbs.miui.com/forum/201801/27/205347wxgog7z54t01g74x.jpg.thumb.jpg" alt="img"></p>
+<figure data-type="image" tabindex="12"><img src="https://attach.bbs.miui.com/forum/201801/27/205347wxgog7z54t01g74x.jpg.thumb.jpg" alt="img"></figure>
 <p>​</p>
 </li>
 </ul>
@@ -351,11 +351,11 @@
 <ul>
 <li>
 <p>开机按F2进入BIOS设置,光标移动到Security,点击<strong>Set Supervisor Password</strong>设置一个<strong>BIOS密码</strong>,输入两次相同的密码,点击YES保存。<code>***这个BIOS密码非常重要，一定要设置成常用的密码并且备份，我现在就是忘了BIOS密码进不去BIOS，走售后只能换主板，价格3000+。 欲哭无泪中。。千万记得备份密码***。</code></p>
-<p><img src="https://attach.bbs.miui.com/forum/201801/27/211600vkepe765lkee5t3r.png.thumb.jpg" alt="img"></p>
+<figure data-type="image" tabindex="13"><img src="https://attach.bbs.miui.com/forum/201801/27/211600vkepe765lkee5t3r.png.thumb.jpg" alt="img"></figure>
 </li>
 <li>
 <p>关闭安全启动，点击Secure Boot Mode,设置为Disabled关闭安全启动</p>
-<p><img src="https://attach.bbs.miui.com/forum/201801/27/211601iqzpjqp9wp2zvtj5.png.thumb.jpg" alt="img"></p>
+<figure data-type="image" tabindex="14"><img src="https://attach.bbs.miui.com/forum/201801/27/211601iqzpjqp9wp2zvtj5.png.thumb.jpg" alt="img"></figure>
 </li>
 <li>
 <p>按F10保存设置并退出BIOS</p>
@@ -369,75 +369,75 @@
 </li>
 <li>
 <p>使用分区助手（无损）删除MSR分区</p>
-<p><img src="https://attach.bbs.miui.com/forum/201801/30/230916qb0zxava2zcfuxyl.png.thumb.jpg" alt="img"></p>
+<figure data-type="image" tabindex="15"><img src="https://attach.bbs.miui.com/forum/201801/30/230916qb0zxava2zcfuxyl.png.thumb.jpg" alt="img"></figure>
 </li>
 <li>
 <p>选中ESP(EFI)分区 右键选择调整移动分区</p>
-<p><img src="https://attach.bbs.miui.com/forum/201801/30/230918kjojjp2gm3junjqp.png.thumb.jpg" alt="img"></p>
+<figure data-type="image" tabindex="16"><img src="https://attach.bbs.miui.com/forum/201801/30/230918kjojjp2gm3junjqp.png.thumb.jpg" alt="img"></figure>
 </li>
 <li>
 <p>如图拉到最右边，扩容efi分区，确定并提交更改。</p>
-<p><img src="https://attach.bbs.miui.com/forum/201801/30/230919dqshbiynduf0awi0.png.thumb.jpg" alt="img"></p>
+<figure data-type="image" tabindex="17"><img src="https://attach.bbs.miui.com/forum/201801/30/230919dqshbiynduf0awi0.png.thumb.jpg" alt="img"></figure>
 </li>
 </ul>
 <h4 id="安装macos"><strong>安装macOS</strong></h4>
 <ul>
 <li>开机按F12键进入Boot Manager引导管理,选择 EFI USB Device,回车进入macOS安装程序</li>
 </ul>
-<p><img src="https://7.daliansky.net/XiaoMi-Bios5.png" alt="XiaoMi-Bios5"></p>
-<p><img src="https://7.daliansky.net/XiaoMiCloverboot.png" alt="XiaoMiCloverboot"></p>
+<figure data-type="image" tabindex="18"><img src="https://7.daliansky.net/XiaoMi-Bios5.png" alt="XiaoMi-Bios5"></figure>
+<figure data-type="image" tabindex="19"><img src="https://7.daliansky.net/XiaoMiCloverboot.png" alt="XiaoMiCloverboot"></figure>
 <ul>
 <li>移动光标到<code>Boot OS X Install from XiaoMiPro 10131</code>回车</li>
 </ul>
 <h5 id="安装第一阶段">安装第一阶段</h5>
 <h6 id="开始引导macos系统">开始引导macOS系统</h6>
-<p><img src="https://7.daliansky.net/ParallelsPicture.png" alt="ParallelsPicture"></p>
+<figure data-type="image" tabindex="20"><img src="https://7.daliansky.net/ParallelsPicture.png" alt="ParallelsPicture"></figure>
 <p>​	这个过程需要1-2分钟,耐心等待进入安装程序,出现语言选择界面.</p>
 <h6 id="语言选择">语言选择</h6>
 <ul>
 <li>选择简体中文</li>
 </ul>
-<p><img src="https://7.daliansky.net/ParallelsPicture1.png" alt="ParallelsPicture1"></p>
+<figure data-type="image" tabindex="21"><img src="https://7.daliansky.net/ParallelsPicture1.png" alt="ParallelsPicture1"></figure>
 <ul>
 <li>出现<code>macOS实用工具</code>界面,选择磁盘工具</li>
 </ul>
 <h6 id="磁盘工具">磁盘工具</h6>
-<p><img src="https://7.daliansky.net/ParallelsPicture0.png" alt="ParallelsPicture0"></p>
+<figure data-type="image" tabindex="22"><img src="https://7.daliansky.net/ParallelsPicture0.png" alt="ParallelsPicture0"></figure>
 <ul>
 <li>选择<code>显示所有设备</code>:</li>
 </ul>
-<p><img src="https://7.daliansky.net/ParallelsPicture2.png" alt="ParallelsPicture2"></p>
+<figure data-type="image" tabindex="23"><img src="https://7.daliansky.net/ParallelsPicture2.png" alt="ParallelsPicture2"></figure>
 <ul>
 <li>选择<code>SSD Media</code>,点击<code>抹掉</code>按钮,选择默认的<code>Mac OS扩展(日志型)</code>,将名称修改为<code>Macintosh HD</code>,点击<code>抹掉</code>按钮.(PS:会抹掉磁盘上所有内容，之前记得备份)</li>
 </ul>
-<p><img src="https://7.daliansky.net/ParallelsPicture6.png" alt="ParallelsPicture6"></p>
+<figure data-type="image" tabindex="24"><img src="https://7.daliansky.net/ParallelsPicture6.png" alt="ParallelsPicture6"></figure>
 <ul>
 <li>抹盘成功后,它会自动生成一个200MB的EFI分区,这样做的好处是不会出现安装过程中的由于EFI分区尺寸小于200MB而引起的无法安装的错误.当然前提是你的磁盘中没有重要的数据,或者您的数据已经提前备份过了.</li>
 </ul>
-<p><img src="https://7.daliansky.net/ParallelsPicture7.png" alt="ParallelsPicture7"></p>
+<figure data-type="image" tabindex="25"><img src="https://7.daliansky.net/ParallelsPicture7.png" alt="ParallelsPicture7"></figure>
 <ul>
 <li>到这里,磁盘工具的动作就已经结束了.按左上角x ,退出磁盘工具进入安装界面,进行系统的安装了.</li>
 </ul>
 <h6 id="安装macos-2">安装macOS</h6>
-<p><img src="https://7.daliansky.net/ParallelsPicture8.png" alt="ParallelsPicture8"></p>
+<figure data-type="image" tabindex="26"><img src="https://7.daliansky.net/ParallelsPicture8.png" alt="ParallelsPicture8"></figure>
 <ul>
 <li>进入安装界面</li>
 </ul>
-<p><img src="https://7.daliansky.net/ParallelsPicture11.png" alt="ParallelsPicture11"></p>
+<figure data-type="image" tabindex="27"><img src="https://7.daliansky.net/ParallelsPicture11.png" alt="ParallelsPicture11"></figure>
 <ul>
 <li>选择继续，同意</li>
 </ul>
-<p><img src="https://7.daliansky.net/ParallelsPicture12.png" alt="ParallelsPicture12"></p>
-<p><img src="https://7.daliansky.net/ParallelsPicture13.png" alt="ParallelsPicture13"></p>
+<figure data-type="image" tabindex="28"><img src="https://7.daliansky.net/ParallelsPicture12.png" alt="ParallelsPicture12"></figure>
+<figure data-type="image" tabindex="29"><img src="https://7.daliansky.net/ParallelsPicture13.png" alt="ParallelsPicture13"></figure>
 <ul>
 <li>选择刚刚抹掉的分区，安装</li>
 </ul>
-<p><img src="https://attach.bbs.miui.com/forum/201801/27/213036j6czeg36qi67d6wc.png.thumb.jpg" alt="img"></p>
-<p><img src="https://attach.bbs.miui.com/forum/201801/27/213037kns73php6dllyjjp.png.thumb.jpg" alt="img"></p>
+<figure data-type="image" tabindex="30"><img src="https://attach.bbs.miui.com/forum/201801/27/213036j6czeg36qi67d6wc.png.thumb.jpg" alt="img"></figure>
+<figure data-type="image" tabindex="31"><img src="https://attach.bbs.miui.com/forum/201801/27/213037kns73php6dllyjjp.png.thumb.jpg" alt="img"></figure>
 <ul>
 <li>会自动重启数次。</li>
 </ul>
-<p><img src="https://7.daliansky.net/ParallelsPicture16.png" alt="ParallelsPicture16"></p>
+<figure data-type="image" tabindex="32"><img src="https://7.daliansky.net/ParallelsPicture16.png" alt="ParallelsPicture16"></figure>
 <h5 id="安装第二阶段"><strong>安装第二阶段</strong></h5>
 <ul>
 <li>
@@ -455,13 +455,13 @@
 <ul>
 <li>首先让你选择国家,这里我选择中国</li>
 </ul>
-<p><img src="https://7.daliansky.net/Installer3.png" alt="Installer3"></p>
-<p><img src="https://7.daliansky.net/Installer4.png" alt="Installer4"></p>
+<figure data-type="image" tabindex="33"><img src="https://7.daliansky.net/Installer3.png" alt="Installer3"></figure>
+<figure data-type="image" tabindex="34"><img src="https://7.daliansky.net/Installer4.png" alt="Installer4"></figure>
 <ul>
 <li>点击<code>继续</code>,设置键盘。</li>
 </ul>
 <h6 id="设置键盘">设置键盘</h6>
-<p><img src="https://7.daliansky.net/Installer5.png" alt="Installer5"></p>
+<figure data-type="image" tabindex="35"><img src="https://7.daliansky.net/Installer5.png" alt="Installer5"></figure>
 <ul>
 <li>这里询问你<code>是否传输信息到这台Mac</code></li>
 </ul>
@@ -469,29 +469,29 @@
 <ul>
 <li>可以从Mac或者Time Machine备份恢复</li>
 </ul>
-<p><img src="https://7.daliansky.net/Installer6.png" alt="Installer6"></p>
+<figure data-type="image" tabindex="36"><img src="https://7.daliansky.net/Installer6.png" alt="Installer6"></figure>
 <ul>
 <li>我选择<code>现在不传输任何信息</code>,点击<code>继续</code></li>
 </ul>
 <h6 id="apple-id登录">Apple ID登录</h6>
-<p><img src="https://7.daliansky.net/Installer7.png" alt="Installer7"></p>
+<figure data-type="image" tabindex="37"><img src="https://7.daliansky.net/Installer7.png" alt="Installer7"></figure>
 <ul>
 <li>选择是否<code>使用您的Apple ID登录</code>,如何想现在就登录到<code>Apple ID</code>,请输入<code>Apple ID</code>和密码登录,否则选择<code>不登录</code>,进入系统后也可以设置登录到<code>iCloud</code>,点击<code>继续</code></li>
 </ul>
-<p><img src="https://7.daliansky.net/Installer8.png" alt="Installer8"></p>
+<figure data-type="image" tabindex="38"><img src="https://7.daliansky.net/Installer8.png" alt="Installer8"></figure>
 <ul>
 <li>阅读条款与条件,选择<code>同意</code>继续</li>
 </ul>
-<p><img src="https://7.daliansky.net/Installer9.png" alt="Installer9"></p>
+<figure data-type="image" tabindex="39"><img src="https://7.daliansky.net/Installer9.png" alt="Installer9"></figure>
 <ul>
 <li>出现<code>创建电脑用户</code>的窗口,输入用户名和密码,点击<code>继续</code></li>
 </ul>
 <h6 id="创建电脑用户">创建电脑用户</h6>
-<p><img src="https://7.daliansky.net/Installer10.png" alt="Installer10"></p>
+<figure data-type="image" tabindex="40"><img src="https://7.daliansky.net/Installer10.png" alt="Installer10"></figure>
 <ul>
 <li>用户创建成功后,弹出<code>iCloud</code>的<code>正在设置用户</code>的窗口</li>
 </ul>
-<p><img src="https://7.daliansky.net/Installer12.png" alt="Installer12"></p>
+<figure data-type="image" tabindex="41"><img src="https://7.daliansky.net/Installer12.png" alt="Installer12"></figure>
 <ul>
 <li>
 <p>紧接着弹出设置<code>iClound钥匙串</code>的设置窗口,选择<code>稍候设置</code>,点击<code>继续</code></p>
@@ -501,11 +501,11 @@
 </li>
 </ul>
 <h6 id="设置向导完成">设置向导完成</h6>
-<p><img src="https://7.daliansky.net/Installer18.png" alt="Installer18"></p>
+<figure data-type="image" tabindex="42"><img src="https://7.daliansky.net/Installer18.png" alt="Installer18"></figure>
 <ul>
 <li>出现桌面后,整个的安装向导就完成了.</li>
 </ul>
-<p><img src="https://7.daliansky.net/Installer19.png" alt="Installer19"></p>
+<figure data-type="image" tabindex="43"><img src="https://7.daliansky.net/Installer19.png" alt="Installer19"></figure>
 <h5 id="安装后的系统设置">安装后的系统设置</h5>
 <ul>
 <li>系统安装后,你可以先喝杯咖啡兴奋会儿,马上还有更艰巨的任务在等着你呢</li>
