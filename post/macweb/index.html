@@ -1,0 +1,340 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mac 打造前端开发环境 | Coding Forever</title>
+<meta name="description" content="求知的道路走了0.0001%" />
+<link rel="shortcut icon" href="https://deviljinc.github.io/favicon.ico?v=1573141154359">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://deviljinc.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://deviljinc.github.io">
+  <img class="avatar" src="https://deviljinc.github.io/images/avatar.png?v=1573141154359" alt="">
+  </a>
+  <h1 class="site-title">
+    Coding Forever
+  </h1>
+  <p class="site-description">
+    求知的道路走了0.0001%
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          Home
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          Archives
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          Tags
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          about
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/wjingc" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      
+    
+      
+        <a href="1" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      
+    
+      
+        <a href="1" target="_blank">
+          <i class="fab fa-weibo"></i>
+        </a>
+      
+    
+      
+        <a href="https://www.zhihu.com/people/wu-dao-wu-tian/activities" target="_blank">
+          <i class="fab fa-zhihu"></i>
+        </a>
+      
+    
+      
+        <a href="1" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Mac 打造前端开发环境
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-07-19
+              </span>
+              <span>
+                4 min read
+              </span>
+              
+                <a href="https://deviljinc.github.io/tag/2QtHebaegT" class="post-tag">
+                  # Developer Tools
+                </a>
+              
+                <a href="https://deviljinc.github.io/tag/apS0Mn1wt" class="post-tag">
+                  # Mac
+                </a>
+              
+                <a href="https://deviljinc.github.io/tag/JtnSHzWjb" class="post-tag">
+                  # macOS
+                </a>
+              
+                <a href="https://deviljinc.github.io/tag/PC9-HTkJS" class="post-tag">
+                  # Terminal
+                </a>
+              
+                <a href="https://deviljinc.github.io/tag/6CerMqBhv" class="post-tag">
+                  # Visual Studio Code
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://deviljinc.github.io/post-images/macweb.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h2 id="macos-mojave-打造高效率前端开发环境"><strong>macOS Mojave 打造高效率前端开发环境</strong></h2>
+<h3 id="br"><br/></h3>
+<h3 id="安装homebrew"><strong>安装Homebrew</strong></h3>
+<br/>
+<p>​	包管理工具。类似于node下的npm。可以用来安装管理大部分的无界面的工具，如node，git，Python等。<br>
+​	摘自官网的安装命令：</p>
+<pre><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre>
+<!-- more -->
+<h3 id="安装git">安装Git</h3>
+<pre><code>brew install git
+</code></pre>
+<h3 id="安装npm">安装npm</h3>
+<pre><code>npm install npm -g
+</code></pre>
+<h3 id="安装webpack">安装webpack</h3>
+<pre><code>npm install webpack -g
+</code></pre>
+<h3 id="用-iterm2-代替mac-terminal">**用 iTerm2 代替Mac Terminal **</h3>
+<p>​	Mac原生terminal 也很强大也可以设置很美观，但是iTerm2 明显更优秀。</p>
+<h4 id="安装">安装</h4>
+<p>​	首先我们下载的 iTem2 这个软件，比Mac自带的终端更加强大。直接官网 <a href="http://iterm2.com/">http://iterm2.com/</a> 下载并安装即可。</p>
+<h4 id="配置">配置</h4>
+<p>​	将iTem2设置为默认终端：（菜单栏）iTerm2 -&gt; Make iTerm2 Default Term</p>
+<p>​						![屏幕快照 2019-05-09 下午4.16.20](/Users/evildevil/Pictures/Screen Shot/屏幕快照 2019-05-09 下午4.16.20.png)</p>
+<p>​	然后打开偏好设置preference，选中Keys，勾选Hotkey下的Show/hide iTerm2 with a system-wide hotkey，我将热键设置为 Option + Space，这样你就可以通过Option + Space . 全局热键来打开或关闭iTerm2窗口，非常方便。</p>
+<h4 id="主题配色">主题配色</h4>
+<p>​	首先我来介绍一下如何下载并应用我们看好的主题配置文件。</p>
+<p>​	我们可以点击 <a href="https://github.com/mbadolato/iTerm2-Color-Schemes/archive/master.zip">这个链接</a> 直接下载主题项目的所有文件，得到压缩包，解压即可。使用 <code>git</code> 版本控制系统的同学也可以通过下面这个命令将 GitHub 仓库整个克隆至本地：</p>
+<pre><code>git clone https://github.com/mbadolato/iTerm2-Color-Schemes.git
+
+</code></pre>
+<p>​	我个人推荐One Dark 主题。One 系列主题同样也有一暗一亮两个配色方案。<strong>其中的 One Dark 是 Atom 编辑器的默认主题配色</strong>，简洁、养眼。不得不承认这一主题确实很符合我的胃口，我现在所有可以配色的地方（比如各种终端和 VS Code 等编辑器）几乎就直接使用 One Dark 配色。</p>
+<figure data-type="image" tabindex="1"><img src="https://cdn.sspai.com/2019/02/22/7cadc29a9e9ef2df38cff8d74c8b2f2e.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" alt="img"></figure>
+<p>​	这是我的iTerm2界面，自认为很简洁美观。</p>
+<p>![屏幕快照 2019-05-09 下午4.23.47](/Users/evildevil/Pictures/Screen Shot/屏幕快照 2019-05-09 下午4.23.47.png)</p>
+<p>推荐链接：<a href="https://sspai.com/post/53008">10 个 Terminal 主题，让你的 macOS 终端更好看</a></p>
+<h4 id="安装oh-my-zsh">安装oh-my-zsh</h4>
+<p>​	github连接：<a href="https://github.com/robbyrussell/oh-my-zsh">https://github.com/robbyrussell/oh-my-zsh</a></p>
+<p>​	使用 crul 安装：</p>
+<pre><code>sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
+</code></pre>
+<p>​	或使用wget：</p>
+<pre><code>`sh -c ``&quot;$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&quot;`
+</code></pre>
+<h3 id="编辑器"><strong>编辑器</strong></h3>
+<h4 id="vusual-studio-code">Vusual Studio Code</h4>
+<p>​	<strong>Visual Studio Code</strong> is a <strong>lightweight but powerful source code editor</strong> which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for <code>JavaScript, TypeScript and Node.js</code> and has <code>a rich ecosystem of extensions for other languages (such as C++, C#, Java, Python, PHP, Go) and runtimes (such as .NET and Unity)</code>.<br>
+支持的拓展常见的包含如下：</p>
+<figure data-type="image" tabindex="2"><img src="https://upload-images.jianshu.io/upload_images/3980862-5825acffe2b3a3f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/793/format/webp" alt="img"></figure>
+<h5 id="优点">优点：</h5>
+<p>​	重新定义了 Code 编辑。</p>
+<p>​	在任何操作系统上编辑和调试应用程序</p>
+<p>​	内置 Git 支持 ，1000 种以上的扩展</p>
+<p>​	免费和开源</p>
+<h5 id="官网vusual-studio-code">官网：<a href="https://code.visualstudio.com/">Vusual Studio Code</a></h5>
+<h5 id="下载安装downloads">下载安装；<a href="https://code.visualstudio.com/Download">Downloads</a></h5>
+<h5 id="官方文档vs-code-docs">官方文档：<a href="https://code.visualstudio.com/docs">VS Code Docs</a></h5>
+<h5 id="扩展官网extensions-marketplace">扩展官网：<a href="https://marketplace.visualstudio.com/VSCode">Extensions Marketplace</a></h5>
+<h5 id="推荐扩展">推荐扩展</h5>
+<p>​	我将单独写一篇博文具体介绍一些实用的开发插件。</p>
+<h4 id="webstorm">WebStorm</h4>
+<p>​	WebStorm 是<a href="https://baike.baidu.com/item/jetbrains">jetbrains</a>公司旗下一款JavaScript 开发工具。目前已经被广大中国JS开发者誉为“Web前端开发神器”、“最强大的HTML5编辑器”、“最智能的JavaScript IDE”等。与[IntelliJ IDEA](https://baike.baidu.com/item/IntelliJ IDEA)同源，继承了IntelliJ IDEA强大的JS部分的功能。</p>
+<h4 id="submlie-text3">Submlie Text3</h4>
+<h5 id="下载安装官网">下载安装：<a href="http://www.sublimetext.com/3">官网</a></h5>
+<h5 id="插件推荐">插件推荐：</h5>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#macos-mojave-%E6%89%93%E9%80%A0%E9%AB%98%E6%95%88%E7%8E%87%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83"><strong>macOS Mojave 打造高效率前端开发环境</strong></a>
+<ul>
+<li><a href="#br"><br/></a></li>
+<li><a href="#%E5%AE%89%E8%A3%85homebrew"><strong>安装Homebrew</strong></a></li>
+<li><a href="#%E5%AE%89%E8%A3%85git">安装Git</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85npm">安装npm</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85webpack">安装webpack</a></li>
+<li><a href="#%E7%94%A8-iterm2-%E4%BB%A3%E6%9B%BFmac-terminal">**用 iTerm2 代替Mac Terminal **</a>
+<ul>
+<li><a href="#%E5%AE%89%E8%A3%85">安装</a></li>
+<li><a href="#%E9%85%8D%E7%BD%AE">配置</a></li>
+<li><a href="#%E4%B8%BB%E9%A2%98%E9%85%8D%E8%89%B2">主题配色</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85oh-my-zsh">安装oh-my-zsh</a></li>
+</ul>
+</li>
+<li><a href="#%E7%BC%96%E8%BE%91%E5%99%A8"><strong>编辑器</strong></a>
+<ul>
+<li><a href="#vusual-studio-code">Vusual Studio Code</a>
+<ul>
+<li><a href="#%E4%BC%98%E7%82%B9">优点：</a></li>
+<li><a href="#%E5%AE%98%E7%BD%91vusual-studio-code">官网：Vusual Studio Code</a></li>
+<li><a href="#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85downloads">下载安装；Downloads</a></li>
+<li><a href="#%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3vs-code-docs">官方文档：VS Code Docs</a></li>
+<li><a href="#%E6%89%A9%E5%B1%95%E5%AE%98%E7%BD%91extensions-marketplace">扩展官网：Extensions Marketplace</a></li>
+<li><a href="#%E6%8E%A8%E8%8D%90%E6%89%A9%E5%B1%95">推荐扩展</a></li>
+</ul>
+</li>
+<li><a href="#webstorm">WebStorm</a></li>
+<li><a href="#submlie-text3">Submlie Text3</a>
+<ul>
+<li><a href="#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%AE%98%E7%BD%91">下载安装：官网</a></li>
+<li><a href="#%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90">插件推荐：</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://deviljinc.github.io/post/yuan-wang-dan">
+              <h3 class="post-title">
+                愿望单
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'c14d8c25335ef5cf272a',
+    clientSecret: 'f125f2dda284a733d8deef78997910adf7a165e5',
+    repo: 'deviljinc.github.io',
+    owner: 'deviljinc',
+    admin: ['deviljinc'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://deviljinc.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      console.log('section.offsetHeight', section.offsetHeight);
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>

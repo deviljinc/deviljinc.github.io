@@ -1,0 +1,204 @@
+<html>
+  <head>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>前端 | Coding Forever</title>
+<meta name="description" content="求知的道路走了0.0001%" />
+<link rel="shortcut icon" href="https://deviljinc.github.io/favicon.ico?v=1573141154359">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://deviljinc.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://deviljinc.github.io">
+  <img class="avatar" src="https://deviljinc.github.io/images/avatar.png?v=1573141154359" alt="">
+  </a>
+  <h1 class="site-title">
+    Coding Forever
+  </h1>
+  <p class="site-description">
+    求知的道路走了0.0001%
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          Home
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          Archives
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          Tags
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          about
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/wjingc" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      
+    
+      
+        <a href="1" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      
+    
+      
+        <a href="1" target="_blank">
+          <i class="fab fa-weibo"></i>
+        </a>
+      
+    
+      
+        <a href="https://www.zhihu.com/people/wu-dao-wu-tian/activities" target="_blank">
+          <i class="fab fa-zhihu"></i>
+        </a>
+      
+    
+      
+        <a href="1" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+      
+    
+  </div>
+</div>
+
+        <div class="current-tag-container">
+            <h2 class="title">
+                标签：# 前端
+            </h2> 
+        </div>
+        <div class="post-container">
+  
+    <article class="post">
+      <a href="https://deviljinc.github.io/post/dargon">
+        <h2 class="post-title">Dargon</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2019-06-27
+        </span>
+        <span>
+          1 min read
+        </span>
+        
+          <a href="https://deviljinc.github.io/tag/lXzOr1y6d" class="post-tag">
+            # 爬虫
+          </a>
+        
+          <a href="https://deviljinc.github.io/tag/rwYiNXR24" class="post-tag">
+            # 后端
+          </a>
+        
+          <a href="https://deviljinc.github.io/tag/WN0CBrkac" class="post-tag">
+            # 小程序
+          </a>
+        
+          <a href="https://deviljinc.github.io/tag/qian-duan" class="post-tag">
+            # 前端
+          </a>
+        
+          <a href="https://deviljinc.github.io/tag/GOhCbSoLv" class="post-tag">
+            # XCode
+          </a>
+        
+          <a href="https://deviljinc.github.io/tag/PHEHf4Spy" class="post-tag">
+            # SwiftUI
+          </a>
+        
+      </div>
+      
+        <a href="https://deviljinc.github.io/post/dargon" class="post-feature-image" style="background-image: url('https://deviljinc.github.io/post-images/dargon.jpg')">
+        </a>
+      
+      <div class="post-abstract">
+        <h4 id="凡王之血必已剑终">凡王之血，必已剑终。</h4>
+
+      </di>
+    </article>
+  
+</div>
+
+        <div class="pagination-container">
+  
+  
+</div>
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://deviljinc.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      console.log('section.offsetHeight', section.offsetHeight);
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
