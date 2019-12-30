@@ -1,263 +1,507 @@
 <html>
   <head>
-  <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Developer Tools | Coding Forever</title>
-<meta name="description" content="求知的道路走了0.0001%" />
-<link rel="shortcut icon" href="https://deviljinc.github.io/favicon.ico?v=1577683465722">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+      <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Coding Forever</title>
+<link rel="shortcut icon" href="https://deviljinc.github.io/favicon.ico?v=1577683963350">
 <link rel="stylesheet" href="https://deviljinc.github.io/styles/main.css">
+<meta name="description" content="求知的道路走了0.0001%" />
+
+<link rel="stylesheet" href="/media/fonts/iconfont.css">
+<link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://deviljinc.github.io">
-  <img class="avatar" src="https://deviljinc.github.io/images/avatar.png?v=1577683465722" alt="">
-  </a>
-  <h1 class="site-title">
-    Coding Forever
-  </h1>
-  <p class="site-description">
-    求知的道路走了0.0001%
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          Home
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          Archives
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          Tags
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          about
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-        <a href="https://github.com/wjingc" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-      
-    
-      
-        <a href="1" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-      
-    
-      
-        <a href="1" target="_blank">
-          <i class="fab fa-weibo"></i>
-        </a>
-      
-    
-      
-        <a href="https://www.zhihu.com/people/wu-dao-wu-tian/activities" target="_blank">
-          <i class="fab fa-zhihu"></i>
-        </a>
-      
-    
-      
-        <a href="1" target="_blank">
-          <i class="fab fa-facebook"></i>
-        </a>
-      
-    
-  </div>
-</div>
-
-        <div class="current-tag-container">
-            <h2 class="title">
-                标签：# Developer Tools
-            </h2> 
+    <div class="head-top-line"></div>
+    <div class="header-box">
+      <header class="header">
+  <div class="blog-header" id="header">
+    <div class="site-meta">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
         </div>
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://deviljinc.github.io/post/blogspace">
-        <h2 class="post-title">Github Pages + Hexo搭建个人技术博客</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-07-23
-        </span>
-        <span>
-          10 min read
-        </span>
-        
-          <a href="https://deviljinc.github.io/tag/oylX_-fbu" class="post-tag">
-            # Blog
-          </a>
-        
-          <a href="https://deviljinc.github.io/tag/EJkMYFxok1" class="post-tag">
-            # NexT
-          </a>
-        
-          <a href="https://deviljinc.github.io/tag/2QtHebaegT" class="post-tag">
-            # Developer Tools
-          </a>
-        
-          <a href="https://deviljinc.github.io/tag/9_lT9MrDc" class="post-tag">
-            # Hexo
-          </a>
-        
-          <a href="https://deviljinc.github.io/tag/JtnSHzWjb" class="post-tag">
-            # macOS
-          </a>
-        
-          <a href="https://deviljinc.github.io/tag/3Fl4-mOyx" class="post-tag">
-            # Github
-          </a>
-        
       </div>
-      
-        <a href="https://deviljinc.github.io/post/blogspace" class="post-feature-image" style="background-image: url('https://deviljinc.github.io/post-images/blogspace.jpg')">
+      <div class="site-title">
+        <a href="/" class="brand">
+          <span>Coding Forever</span>
         </a>
-      
-      <div class="post-abstract">
-        <h2 id="用github-pages-hexo搭建个人技术博客"><strong>用Github Pages + Hexo搭建个人技术博客</strong></h2>
-<br/>
-<h3 id="序">序</h3>
-<p>Hexo安装过后，默认的主题是<a href="https://github.com/hexojs/hexo-theme-landscape">landscape</a>，如果不喜欢，我们也可以进行更换。本文主要讲解NexT主题的使用。先看下我博客网站的效果吧：<a href="https://wjingc.github.io">wjingc.github.io</a>,我使用的主题是 Mist.</p>
-<h3 id="主要网站">主要网站</h3>
-<ul>
-<li><a href="https://github.com">Github</a></li>
-<li><a href="https://hexo.io/zh-cn/">Hexo</a></li>
-<li><a href="http://theme-next.iissnan.com/getting-started.html">Next</a></li>
-</ul>
-
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://deviljinc.github.io/post/macweb">
-        <h2 class="post-title">Mac 打造前端开发环境</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-07-19
-        </span>
-        <span>
-          4 min read
-        </span>
-        
-          <a href="https://deviljinc.github.io/tag/2QtHebaegT" class="post-tag">
-            # Developer Tools
-          </a>
-        
-          <a href="https://deviljinc.github.io/tag/apS0Mn1wt" class="post-tag">
-            # Mac
-          </a>
-        
-          <a href="https://deviljinc.github.io/tag/JtnSHzWjb" class="post-tag">
-            # macOS
-          </a>
-        
-          <a href="https://deviljinc.github.io/tag/PC9-HTkJS" class="post-tag">
-            # Terminal
-          </a>
-        
-          <a href="https://deviljinc.github.io/tag/6CerMqBhv" class="post-tag">
-            # Visual Studio Code
-          </a>
-        
       </div>
-      
-        <a href="https://deviljinc.github.io/post/macweb" class="post-feature-image" style="background-image: url('https://deviljinc.github.io/post-images/macweb.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        <h2 id="macos-mojave-打造高效率前端开发环境"><strong>macOS Mojave 打造高效率前端开发环境</strong></h2>
-<h3 id="br"><br/></h3>
-<h3 id="安装homebrew"><strong>安装Homebrew</strong></h3>
-<br/>
-<p>​	包管理工具。类似于node下的npm。可以用来安装管理大部分的无界面的工具，如node，git，Python等。<br>
-​	摘自官网的安装命令：</p>
-<pre><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
-</code></pre>
+      <p class="subtitle">Quick notes</p>
+    </div>
+    <nav class="site-nav" id="site_nav">
+      <ul>
+        <li class="nav-item ">
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        </li>
+        <li class="nav-item ">
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        </li>
+        <li class="nav-item ">
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        </li>
+        <li class="nav-item">
+          <a>
+            <i class="iconfont icon-search"></i> 搜索
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<script type="text/javascript"> 
+ 
+  let showNav = true;
 
-      </di>
-    </article>
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
   
+  function navClick() {
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+    </div>
+    <div class="main-continer">
+      <div class="section-layout">
+        <div class="section-layout-wrapper">
+          <div class="sidebar">
+    <div class="sidebar-wrapper">
+  <div class="sidebar-item">
+    <img class="site-author-image" src="https://deviljinc.github.io/images/avatar.png"/>
+    <p class="site-author-name">Coding Forever</p>
+    <p class="site-description">求知的道路走了0.0001%</p>
+  </div>
+  <div class="sidebar-item side-item-stat">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        <span class="site-item-stat-count">16</span>
+        <span class="site-item-stat-name">日志</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">35</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">35</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  <div class="sidebar-item">
+    <span class="site-item-rss">
+        <i class="iconfont icon-rss"></i>
+        <a href="https://deviljinc.github.io/atom.xml" target="_blank">RSS</a>
+    </span>
+  </div>
+  <div class="sidebar-item sidebar-item-social">
+    <div class="social-item">
+      <a href="https://www.github.com/hsxyhao">
+        <i class="iconfont icon-github"></i> GitHub
+      </a>
+      <a href="">
+        <i class="iconfont icon-twitter"></i> Twitter
+      </a>
+    </div>
+    <div class="social-item">
+      <a href="">
+        <i class="iconfont icon-globe"></i> 豆瓣
+      </a>
+      <a href="">
+        <i class="iconfont icon-globe"></i> 知乎
+      </a>
+    </div>
+  </div>
 </div>
-
-        <div class="pagination-container">
-  
-  
 </div>
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://deviljinc.github.io/atom.xml" target="_blank">RSS</a>
+          <div class="section-box">
+            <section class="section posts-expand">
+              <div class="tag-timeline-box">
+  <div class="tag-timeline-wrapper">
+    <div class="tag-timeline-title">
+      <h2>
+        Developer Tools
+        <small>标签</small>
+      </h2>
+    </div>
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+          <a href="https://deviljinc.github.io/post/blogspace">
+            <div class="motion-warpper">
+              <div class="tag-post-node">
+                <h1>
+                  07-23
+                  <small>Github Pages + Hexo搭建个人技术博客</small>
+                </h1>
+              </div>  
+            </div>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+          <a href="https://deviljinc.github.io/post/macweb">
+            <div class="motion-warpper">
+              <div class="tag-post-node">
+                <h1>
+                  07-19
+                  <small>Mac 打造前端开发环境</small>
+                </h1>
+              </div>  
+            </div>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+    
+      
+        
+      
+    
+  </div>
+</div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      © 2019-2020 <i class="iconfont icon-heart"></i> HsxyHao
+    </div>
+    <div class="poweredby">
+      <div class="power-left">Power By<a href="https://github.com/hsxyhao"> HsxyHao</a></div>
+      <div>Copy<a href="https://github.com/iissnan/hexo-theme-next"> Hexo Next Theme</a></div>
+    </div>
+  </footer>
+  <div class="back-to-top" id="back_to_top">
+    <i class="iconfont icon-arrow_up"></i>
+    <span class="scrollpercent">
+      <span id="back_to_top_text">100</span>%
+    </span>
+  </div>
 </div>
 
 <script>
-  hljs.initHighlightingOnLoad()
 
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+  let body = document.body;
 
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text');
 
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      console.log('section.offsetHeight', section.offsetHeight);
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
       } else {
-        link.classList.remove("current");
+        window.scrollTo(_currentY, targetY)
       }
-    });
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(body.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = body.scrollTop / (body.scrollHeight - body.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    back2TopText.textContent = Math.floor(percent);
   });
 
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
 </script>
-
-      </div>
     </div>
   </body>
+  <script src="/media/js/motion.js"></script>
 </html>

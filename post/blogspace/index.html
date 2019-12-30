@@ -1,138 +1,524 @@
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Github Pages + Hexo搭建个人技术博客 | Coding Forever</title>
-<meta name="description" content="求知的道路走了0.0001%" />
-<link rel="shortcut icon" href="https://deviljinc.github.io/favicon.ico?v=1577683465722">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+      <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Coding Forever</title>
+<link rel="shortcut icon" href="https://deviljinc.github.io/favicon.ico?v=1577683963350">
 <link rel="stylesheet" href="https://deviljinc.github.io/styles/main.css">
+<meta name="description" content="求知的道路走了0.0001%" />
+
+<link rel="stylesheet" href="/media/fonts/iconfont.css">
+<link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://deviljinc.github.io">
-  <img class="avatar" src="https://deviljinc.github.io/images/avatar.png?v=1577683465722" alt="">
-  </a>
-  <h1 class="site-title">
-    Coding Forever
-  </h1>
-  <p class="site-description">
-    求知的道路走了0.0001%
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          Home
+    <div class="head-top-line"></div>
+    <div class="header-box">
+      <header class="header">
+  <div class="blog-header" id="header">
+    <div class="site-meta">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-title">
+        <a href="/" class="brand">
+          <span>Coding Forever</span>
         </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          Archives
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          Tags
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          about
-        </a>
-      
-    
+      </div>
+      <p class="subtitle">Quick notes</p>
+    </div>
+    <nav class="site-nav" id="site_nav">
+      <ul>
+        <li class="nav-item ">
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        </li>
+        <li class="nav-item ">
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        </li>
+        <li class="nav-item ">
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        </li>
+        <li class="nav-item">
+          <a>
+            <i class="iconfont icon-search"></i> 搜索
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
-  <div class="social-container">
-    
+</header>
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+    </div>
+    <div class="main-continer">
+      <div class="section-layout">
+        <div class="section-layout-wrapper">
+          
+<div class="sidebar">
+    <div class="sidebar-wrapper" id="sidebar">
       
-        <a href="https://github.com/wjingc" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
       
-    
-      
-        <a href="1" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-      
-    
-      
-        <a href="1" target="_blank">
-          <i class="fab fa-weibo"></i>
-        </a>
-      
-    
-      
-        <a href="https://www.zhihu.com/people/wu-dao-wu-tian/activities" target="_blank">
-          <i class="fab fa-zhihu"></i>
-        </a>
-      
-    
-      
-        <a href="1" target="_blank">
-          <i class="fab fa-facebook"></i>
-        </a>
-      
-    
+      <div class="sidebar-body" id="sidebar_body">
+        
+          <div class="post-side-meta" id="post_side_meta">
+            <div class="sidebar-wrapper">
+  <div class="sidebar-item">
+    <img class="site-author-image" src="https://deviljinc.github.io/images/avatar.png"/>
+    <p class="site-author-name">Coding Forever</p>
+    <p class="site-description">求知的道路走了0.0001%</p>
+  </div>
+  <div class="sidebar-item side-item-stat">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        <span class="site-item-stat-count">16</span>
+        <span class="site-item-stat-name">日志</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">35</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">35</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  <div class="sidebar-item">
+    <span class="site-item-rss">
+        <i class="iconfont icon-rss"></i>
+        <a href="https://deviljinc.github.io/atom.xml" target="_blank">RSS</a>
+    </span>
+  </div>
+  <div class="sidebar-item sidebar-item-social">
+    <div class="social-item">
+      <a href="https://www.github.com/hsxyhao">
+        <i class="iconfont icon-github"></i> GitHub
+      </a>
+      <a href="">
+        <i class="iconfont icon-twitter"></i> Twitter
+      </a>
+    </div>
+    <div class="social-item">
+      <a href="">
+        <i class="iconfont icon-globe"></i> 豆瓣
+      </a>
+      <a href="">
+        <i class="iconfont icon-globe"></i> 知乎
+      </a>
+    </div>
+  </div>
+</div>
+          </div>
+          <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+            <div class="toc-box">
+  <div class="toc-wrapper" id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E7%94%A8github-pages-hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2"><strong>用Github Pages + Hexo搭建个人技术博客</strong></a>
+<ul>
+<li><a href="#%E5%BA%8F">序</a></li>
+<li><a href="#%E4%B8%BB%E8%A6%81%E7%BD%91%E7%AB%99">主要网站</a></li>
+<li><a href="#%E7%9B%AE%E5%BD%95">目录</a>
+<ul>
+<li><a href="#github%E9%85%8D%E7%BD%AE">Github配置</a>
+<ul>
+<li><a href="#%E6%B3%A8%E5%86%8Cgithub%E8%B4%A6%E5%8F%B7">注册Github账号</a></li>
+<li><a href="#%E5%88%9B%E5%BB%BAgithub%E4%BB%93%E5%BA%93">创建Github仓库</a></li>
+<li><a href="#%E7%94%9F%E6%88%90github-pages">生成Github Pages</a></li>
+</ul>
+</li>
+<li><a href="#%E7%B3%BB%E7%BB%9F%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE">系统环境配置</a>
+<ul>
+<li><a href="#%E5%AE%89%E8%A3%85nodejs">安装Node.js</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85git">安装Git</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85hexo">安装Hexo</a></li>
+</ul>
+</li>
+<li><a href="#hexo%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE">Hexo主题设置</a>
+<ul>
+<li><a href="#%E4%B8%8B%E8%BD%BD%E4%B8%BB%E9%A2%98">下载主题</a></li>
+<li><a href="#%E5%90%AF%E7%94%A8%E4%B8%BB%E9%A2%98">启用主题</a></li>
+<li><a href="#%E9%AA%8C%E8%AF%81%E4%B8%BB%E9%A2%98">验证主题</a></li>
+</ul>
+</li>
+<li><a href="#next%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E7%BE%8E%E5%8C%96">NexT主题配置美化</a>
+<ul>
+<li><a href="#%E9%80%89%E6%8B%A9-scheme">选择 Scheme</a></li>
+<li><a href="#%E8%AE%BE%E7%BD%AE%E8%AF%AD%E8%A8%80">设置语言</a></li>
+<li><a href="#%E8%AE%BE%E7%BD%AE%E8%8F%9C%E5%8D%95">设置菜单</a></li>
+<li><a href="#%E8%AE%BE%E7%BD%AE%E4%BE%A7%E6%A0%8F"><strong>设置侧栏</strong></a></li>
+<li><a href="#%E8%AE%BE%E7%BD%AE%E5%A4%B4%E5%83%8F">设置头像</a></li>
+<li><a href="#%E8%AE%BE%E7%BD%AE%E4%BD%9C%E8%80%85%E6%98%B5%E7%A7%B0">设置作者昵称</a></li>
+<li><a href="#%E7%AB%99%E7%82%B9%E6%8F%8F%E8%BF%B0">站点描述</a></li>
+<li><a href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><strong>参考链接</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
   </div>
 </div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              Github Pages + Hexo搭建个人技术博客
-            </h2>
-            <div class="post-info">
-              <span>
-                2019-07-23
-              </span>
-              <span>
-                10 min read
-              </span>
-              
-                <a href="https://deviljinc.github.io/tag/oylX_-fbu" class="post-tag">
-                  # Blog
-                </a>
-              
-                <a href="https://deviljinc.github.io/tag/EJkMYFxok1" class="post-tag">
-                  # NexT
-                </a>
-              
-                <a href="https://deviljinc.github.io/tag/2QtHebaegT" class="post-tag">
-                  # Developer Tools
-                </a>
-              
-                <a href="https://deviljinc.github.io/tag/9_lT9MrDc" class="post-tag">
-                  # Hexo
-                </a>
-              
-                <a href="https://deviljinc.github.io/tag/JtnSHzWjb" class="post-tag">
-                  # macOS
-                </a>
-              
-                <a href="https://deviljinc.github.io/tag/3Fl4-mOyx" class="post-tag">
-                  # Github
-                </a>
-              
-            </div>
-            
-              <img class="post-feature-image" src="https://deviljinc.github.io/post-images/blogspace.jpg" alt="">
-            
-            <div class="post-content-wrapper">
-              <div class="post-content">
+<script>
+
+let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1; 
+let active = 'active-show', activeClass = 'active-current';
+let tocWrapper = document.querySelector('#toc_wrapper');
+let tocContent = tocWrapper.children[0];
+
+function addTocNumber(elem, deep) {
+  if (!elem) {
+    return;
+  }
+  let prop = elem.__proto__;
+
+  if (prop === HTMLUListElement.prototype) {
+    for (let i = 0; i < elem.children.length; i++) {
+      addTocNumber(elem.children[i], deep + (i + 1) + '.');
+    }
+  } else if (prop === HTMLLIElement.prototype) {
+    // 保存li元素
+    lList.push(elem);
+    for (let i = 0; i < elem.children.length; i++) {
+      let cur = elem.children[i];
+      if (cur.__proto__ === HTMLAnchorElement.prototype) {
+        cur.text =  deep + ' ' + cur.text;
+      } else if (cur.__proto__ === HTMLUListElement.prototype) {
+        addTocNumber(cur, deep);
+      }
+    }
+  }
+}
+
+
+document.addEventListener('scroll', function(e) {
+  if (lList.length <= 0) {
+    return;
+  }
+  let scrollTop = document.body.scrollTop;
+  let dir;
+
+  if (lastTop - scrollTop > 0) {
+    dir = 'up';
+  } else {
+    dir = 'down';
+  }
+
+  lastTop = scrollTop;
+  if (scrollTop <= 0) {
+    if (lastIndex >= 0 && lastIndex < hList.length) {
+      lList[lastIndex].classList.remove(activeClass);
+    }
+    return;
+  }
+
+  let current = 0, hasFind = false;
+  for (let i = 0; i < hList.length; i++) {
+    if (hList[i].offsetTop > scrollTop) {
+      current = i;
+      hasFind = true;
+      break;
+    }
+  }
+  if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+    current = hList.length - 1;
+  } else {
+    current--;
+  }
+  if (dir === 'down') {
+    if (current > lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex) 
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  } else {
+    if (current < lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex);
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  }
+});
+
+function removeParentActiveClass() {
+  let parents = tocContent.querySelectorAll('.'+active)
+  parents.forEach(function(elem) {
+    elem.classList.remove(active);
+  });
+}
+
+function addActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.add(activeClass);
+  }
+}
+
+function removeActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.remove(activeClass);
+  }
+}
+
+function addActiveLiElemment(elem, parent) {
+  if (!elem || elem === parent) {
+    return;
+  } else {
+    if (elem.__proto__ === HTMLLIElement.prototype) {
+      elem.classList.add(active);
+    }
+    addActiveLiElemment(elem.parentElement, parent);
+  }
+}
+
+function showToc() {
+  if (tocWrapper) {
+    postBody = document.querySelector('#post_body');
+    for (let i = 0; i < postBody.children.length; i++) {
+      if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+        hList.push(postBody.children[i]);
+      }
+    }
+
+    if (hList.length > 10) {
+      active = 'active-hidden'
+      tocContent.classList.add('closed');
+    } else {
+      tocContent.classList.add('expanded');
+    }
+  }
+}
+addTocNumber(tocContent, '');
+
+window.addEventListener('load', function() {
+  showToc();
+  document.querySelector('#sidebar').style='display: block;';
+  tocWrapper.classList.add('toc-active');
+  setTimeout(function() {
+    if ("createEvent" in document) {
+      let evt = document.createEvent("HTMLEvents");
+      evt.initEvent("scroll", false, true);
+      document.dispatchEvent(evt);
+    }
+    else {
+      document.fireEvent("scroll");
+    }
+  }, 500)
+})
+
+</script>
+          </div>
+        
+      </div>
+    </div>
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+
+  }
+
+  postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  let limitTop = sidebar.offsetTop;
+  let hasFix = false;
+  window.addEventListener('scroll', function(e) {
+    if (document.body.scrollTop >= limitTop) {
+      if (!hasFix) {
+        sidebar.classList.add('sidebar-fixed');
+        hasFix = true;
+      }
+    } else {
+      if (hasFix) {
+        sidebar.classList.remove('sidebar-fixed');
+        hasFix = false;
+      }
+    }
+  });
+</script>
+          <div class="section-box">
+            <div class="section post">
+              <div class="article-box">
+    <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://deviljinc.github.io/post/blogspace">
+      Github Pages + Hexo搭建个人技术博客
+    </a>
+  </h1>
+  <div class="post-meta">
+    <span class="meta-item">
+      <i class="iconfont icon-calendar_empty"></i>
+      <span class="pc-show">发布于</span>
+      <span>2019-07-23</span>
+    </span>
+    
+      <span class="meta-item">
+        <span class="post-meta-divider">|</span>
+        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="pc-show">分类于</span>
+        
+          
+            <a href="https://deviljinc.github.io/tag/oylX_-fbu">
+              <span>Blog</span>
+            </a>、
+          
+        
+          
+            <a href="https://deviljinc.github.io/tag/EJkMYFxok1">
+              <span>NexT</span>
+            </a>、
+          
+        
+          
+            <a href="https://deviljinc.github.io/tag/2QtHebaegT">
+              <span>Developer Tools</span>
+            </a>、
+          
+        
+          
+            <a href="https://deviljinc.github.io/tag/9_lT9MrDc">
+              <span>Hexo</span>
+            </a>、
+          
+        
+          
+            <a href="https://deviljinc.github.io/tag/JtnSHzWjb">
+              <span>macOS</span>
+            </a>、
+          
+        
+          
+            <a href="https://deviljinc.github.io/tag/3Fl4-mOyx">
+              <span>Github</span>
+            </a>
+          
+        
+      </span>
+    
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-time"></i>
+      <span>10分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="iconfont icon-keyboard"></i>
+      <span class="pc-show">2326字数</span>
+    </span>
+  </div>
+</header>
+</div>
+              <div class="post-body next-md-body" id="post_body">
                 <h2 id="用github-pages-hexo搭建个人技术博客"><strong>用Github Pages + Hexo搭建个人技术博客</strong></h2>
 <br/>
 <h3 id="序">序</h3>
@@ -448,82 +834,61 @@ scheme: Mist
 </ul>
 
               </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E7%94%A8github-pages-hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2"><strong>用Github Pages + Hexo搭建个人技术博客</strong></a>
-<ul>
-<li><a href="#%E5%BA%8F">序</a></li>
-<li><a href="#%E4%B8%BB%E8%A6%81%E7%BD%91%E7%AB%99">主要网站</a></li>
-<li><a href="#%E7%9B%AE%E5%BD%95">目录</a>
-<ul>
-<li><a href="#github%E9%85%8D%E7%BD%AE">Github配置</a>
-<ul>
-<li><a href="#%E6%B3%A8%E5%86%8Cgithub%E8%B4%A6%E5%8F%B7">注册Github账号</a></li>
-<li><a href="#%E5%88%9B%E5%BB%BAgithub%E4%BB%93%E5%BA%93">创建Github仓库</a></li>
-<li><a href="#%E7%94%9F%E6%88%90github-pages">生成Github Pages</a></li>
-</ul>
-</li>
-<li><a href="#%E7%B3%BB%E7%BB%9F%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE">系统环境配置</a>
-<ul>
-<li><a href="#%E5%AE%89%E8%A3%85nodejs">安装Node.js</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85git">安装Git</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85hexo">安装Hexo</a></li>
-</ul>
-</li>
-<li><a href="#hexo%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE">Hexo主题设置</a>
-<ul>
-<li><a href="#%E4%B8%8B%E8%BD%BD%E4%B8%BB%E9%A2%98">下载主题</a></li>
-<li><a href="#%E5%90%AF%E7%94%A8%E4%B8%BB%E9%A2%98">启用主题</a></li>
-<li><a href="#%E9%AA%8C%E8%AF%81%E4%B8%BB%E9%A2%98">验证主题</a></li>
-</ul>
-</li>
-<li><a href="#next%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E7%BE%8E%E5%8C%96">NexT主题配置美化</a>
-<ul>
-<li><a href="#%E9%80%89%E6%8B%A9-scheme">选择 Scheme</a></li>
-<li><a href="#%E8%AE%BE%E7%BD%AE%E8%AF%AD%E8%A8%80">设置语言</a></li>
-<li><a href="#%E8%AE%BE%E7%BD%AE%E8%8F%9C%E5%8D%95">设置菜单</a></li>
-<li><a href="#%E8%AE%BE%E7%BD%AE%E4%BE%A7%E6%A0%8F"><strong>设置侧栏</strong></a></li>
-<li><a href="#%E8%AE%BE%E7%BD%AE%E5%A4%B4%E5%83%8F">设置头像</a></li>
-<li><a href="#%E8%AE%BE%E7%BD%AE%E4%BD%9C%E8%80%85%E6%98%B5%E7%A7%B0">设置作者昵称</a></li>
-<li><a href="#%E7%AB%99%E7%82%B9%E6%8F%8F%E8%BF%B0">站点描述</a></li>
-<li><a href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><strong>参考链接</strong></a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-              </div>
-            </div>
-          </article>
-        </div>
-
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://deviljinc.github.io/post/macweb">
-              <h3 class="post-title">
-                Mac 打造前端开发环境
-              </h3>
-            </a>
-          </div>
-        
-
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Coding Forever
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://deviljinc.github.io/post/blogspace" title="Github Pages + Hexo搭建个人技术博客">https://deviljinc.github.io/post/blogspace</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外,转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://deviljinc.github.io/tag/oylX_-fbu"># Blog</a>
+    
+      <a href="https://deviljinc.github.io/tag/EJkMYFxok1"># NexT</a>
+    
+      <a href="https://deviljinc.github.io/tag/2QtHebaegT"># Developer Tools</a>
+    
+      <a href="https://deviljinc.github.io/tag/9_lT9MrDc"># Hexo</a>
+    
+      <a href="https://deviljinc.github.io/tag/JtnSHzWjb"># macOS</a>
+    
+      <a href="https://deviljinc.github.io/tag/3Fl4-mOyx"># Github</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="iconfont icon-angle_left"></i>
+        <a class="nav-pc-next" href="https://deviljinc.github.io/post/Hackintosh">小米Pro笔记本 Hackintosh MacOS Mojave 10.14.4 安装教程</a class="nav-pc-next">
+        <a class="nav-mobile-prev" href="https://deviljinc.github.io/post/Hackintosh">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" href="https://deviljinc.github.io/post/macweb">Mac 打造前端开发环境</a>
+        <a class="nav-mobile-next" href="https://deviljinc.github.io/post/macweb">下一篇</a>
+        <i class="iconfont icon-angle_right"></i>
+      
+    </div>
+  </div>
+</div>
+              
+                
+                  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
 
 <script>
-
   var gitalk = new Gitalk({
     clientID: 'c14d8c25335ef5cf272a',
     clientSecret: 'f125f2dda284a733d8deef78997910adf7a165e5',
@@ -533,64 +898,77 @@ scheme: Mist
     id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
     distractionFreeMode: false  // Facebook-like distraction free mode
   })
-
   gitalk.render('gitalk-container')
-
 </script>
-
-          
-
-          
-        
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://deviljinc.github.io/atom.xml" target="_blank">RSS</a>
+                
+                
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      © 2019-2020 <i class="iconfont icon-heart"></i> HsxyHao
+    </div>
+    <div class="poweredby">
+      <div class="power-left">Power By<a href="https://github.com/hsxyhao"> HsxyHao</a></div>
+      <div>Copy<a href="https://github.com/iissnan/hexo-theme-next"> Hexo Next Theme</a></div>
+    </div>
+  </footer>
+  <div class="back-to-top" id="back_to_top">
+    <i class="iconfont icon-arrow_up"></i>
+    <span class="scrollpercent">
+      <span id="back_to_top_text">100</span>%
+    </span>
+  </div>
 </div>
 
 <script>
-  hljs.initHighlightingOnLoad()
 
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+  let body = document.body;
 
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text');
 
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      console.log('section.offsetHeight', section.offsetHeight);
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
       } else {
-        link.classList.remove("current");
+        window.scrollTo(_currentY, targetY)
       }
-    });
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(body.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = body.scrollTop / (body.scrollHeight - body.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    back2TopText.textContent = Math.floor(percent);
   });
 
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
 </script>
-
-      </div>
     </div>
   </body>
+  <script src="/media/js/motion.js"></script>
 </html>
