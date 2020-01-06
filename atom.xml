@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://deviljinc.github.io</id>
     <title>Coding Forever</title>
-    <updated>2020-01-06T08:35:32.259Z</updated>
+    <updated>2020-01-06T08:41:59.231Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://deviljinc.github.io"/>
     <link rel="self" href="https://deviljinc.github.io/atom.xml"/>
-    <subtitle>求知的道路走了0.0001%</subtitle>
+    <subtitle>求知的道路走了0.000001%</subtitle>
     <logo>https://deviljinc.github.io/images/avatar.png</logo>
     <icon>https://deviljinc.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Coding Forever</rights>
