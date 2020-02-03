@@ -1,25 +1,37 @@
+<!DOCTYPE html>
 <html>
   <head>
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Coding Forever</title>
-<link rel="shortcut icon" href="https://deviljinc.github.io/favicon.ico?v=1580698714954">
+<meta name="keywords" content="Gridea静态个人博客">
+<meta name="description" content="求知的道路走了0.000001%">
+<link rel="shortcut icon" href="https://deviljinc.github.io/favicon.ico?v=1580702197152">
 <link rel="stylesheet" href="https://deviljinc.github.io/styles/main.css">
-<meta name="description" content="求知的道路走了0.000001%" />
 
-<link rel="stylesheet" href="/media/fonts/iconfont.css">
+<link rel="stylesheet" href="/media/css/gemini.css">
+
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link href="/media/hljs/styles/androidstudio.css" rel="stylesheet">  
+<script src="/media/hljs/highlight.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
   </head>
   <body>
     <div class="head-top-line"></div>
     <div class="header-box">
-      <header class="header">
-  <div class="blog-header" id="header">
-    <div class="site-meta">
+      
+<div class=" gemini">
+  <header class="header bg-color ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
       <div class="nav-toggle" id="nav_toggle">
         <div class="toggle-box">
           <div class="line line-top"></div>
@@ -27,57 +39,64 @@
           <div class="line line-bottom"></div>
         </div>
       </div>
-      <div class="site-title">
-        <a href="/" class="brand">
-          <span>Coding Forever</span>
-        </a>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>Coding Forever</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">精于心，简于形</p>
+        
       </div>
-      <p class="subtitle">Quick notes</p>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            <li class="nav-item nav-item-active">
+              
+                <a href="/">
+                  <i class="fa fa-home"></i> Home
+                </a>
+              
+            </li>
+          
+            <li class="nav-item ">
+              
+                <a href="/archives">
+                  <i class="fa fa-archive"></i> Archives
+                </a>
+              
+            </li>
+          
+            <li class="nav-item ">
+              
+                <a href="/tags">
+                  <i class="fa fa-tags"></i> Tags
+                </a>
+              
+            </li>
+          
+            <li class="nav-item ">
+              
+                <a href="/post/about">
+                  <i class="fa fa-user"></i> about
+                </a>
+              
+            </li>
+          
+          <li class="nav-item">
+            <a>
+              <i class="fa fa-search"></i> 搜索
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="site-nav" id="site_nav">
-      <ul>
-        <li class="nav-item nav-item-active">
-          
-            
-          
-            
-          
-            
-          
-            
-          
-        </li>
-        <li class="nav-item ">
-          
-            
-          
-            
-          
-            
-          
-            
-          
-        </li>
-        <li class="nav-item ">
-          
-            
-          
-            
-          
-            
-          
-            
-          
-        </li>
-        <li class="nav-item">
-          <a>
-            <i class="iconfont icon-search"></i> 搜索
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  </header>
+</div>
+
 <script type="text/javascript"> 
  
   let showNav = true;
@@ -86,28 +105,38 @@
   siteNav = document.querySelector('#site_nav');
   
   function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
     navToggle.classList.toggle('nav-toggle-active');
     siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
   }
 
   navToggle.addEventListener('click',navClick);  
 </script>
     </div>
     <div class="main-continer">
-      <div class="section-layout">
+      
+      <div class="section-layout gemini ">
         <div class="section-layout-wrapper">
           <div class="sidebar">
-    <div class="sidebar-wrapper">
+    
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
-    <img class="site-author-image" src="https://deviljinc.github.io/images/avatar.png"/>
+    <img class="site-author-image right-motion" src="https://deviljinc.github.io/images/avatar.png"/>
     <p class="site-author-name">Coding Forever</p>
-    <p class="site-description">求知的道路走了0.000001%</p>
+    <p class="site-description right-motion">这个人很懒，什么都不想写...</p>
   </div>
-  <div class="sidebar-item side-item-stat">
+  <div class="sidebar-item side-item-stat right-motion">
     <div class="sidebar-item-box">
       <a href="/archives/">
-        <span class="site-item-stat-count">16</span>
-        <span class="site-item-stat-name">日志</span>
+        
+        <span class="site-item-stat-count">13</span>
+        <span class="site-item-stat-name">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
@@ -123,52 +152,44 @@
       </a>
     </div>
   </div>
-  <div class="sidebar-item">
-    <span class="site-item-rss">
-        <i class="iconfont icon-rss"></i>
-        <a href="https://deviljinc.github.io/atom.xml" target="_blank">RSS</a>
-    </span>
-  </div>
+  
+    
+      <div class="sidebar-item" style="border-top: 1px dotted #ccc;">
+      </div>
+    
+  
   <div class="sidebar-item sidebar-item-social">
     <div class="social-item">
-      <a href="https://www.github.com/hsxyhao">
-        <i class="iconfont icon-github"></i> GitHub
-      </a>
-      <a href="">
-        <i class="iconfont icon-twitter"></i> Twitter
-      </a>
-    </div>
-    <div class="social-item">
-      <a href="">
-        <i class="iconfont icon-globe"></i> 豆瓣
-      </a>
-      <a href="">
-        <i class="iconfont icon-globe"></i> 知乎
-      </a>
+      
+      
     </div>
   </div>
+
+
 </div>
 </div>
-          <div class="section-box">
-            <section class="section posts-expand slide-down-in">
+          <div class="section-box gemini">
+            <section class="section  posts-expand slide-down-in">
               
-  <article class="post-list-box post">
-    <header class="post-header">
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
   <h1 class="post-title">
     <a class="post-title-link" href="https://deviljinc.github.io/post/Hackintosh">
       小米Pro笔记本 Hackintosh MacOS Mojave 10.14.4 安装教程
     </a>
   </h1>
   <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
       <span>2019-07-25</span>
     </span>
     
       <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="post-meta-divider pc-show">|</span>
+        <i class="fa fa-folder-o"></i>
         <span class="pc-show">分类于</span>
         
           
@@ -202,57 +223,58 @@
           
         
       </span>
+      <span class="post-meta-divider">|</span>
     
     <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
+      <i class="fa fa-clock-o"></i>
       <span>10分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">2425字数</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>2425<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
-    <div class="post-body">
-      <h3 id="前言"><strong>前言</strong></h3>
+      <div class="post-body">
+        
+          <h3 id="前言"><strong>前言</strong></h3>
 <br/>
 <p>本文仅针对小米笔记本Pro，其他机型可作参考，需要找到对应的EFI替换。本文部分内容引用：<a href="https://blog.daliansky.net/MacOS-installation-tutorial-XiaoMi-Pro-installation-process-records.html">macOS安装教程兼小米Pro安装过程记录</a> 此教程大部分准备工作在win下进行已尽量通俗易懂了。</p>
 <p>让你的小米笔记本Pro吃上黑苹果，体验MacBook Pro 95%的功能</p>
 
-      <!--noindex-->
-      
-      <div class="post-button text-center">
-        <a class="btn" href="https://deviljinc.github.io/post/Hackintosh" rel="contents">
-          阅读全文 »
-        </a>
+        
+        
+        <div class="post-button text-center">
+          <a class="btn" href="https://deviljinc.github.io/post/Hackintosh" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
       </div>
-      <!--/noindex-->
       
     </div>
-    <footer class="post-footer">
-      <div class="post-eof"></div>
-    </footer>
   </article>
 
-  <article class="post-list-box post">
-    <header class="post-header">
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
   <h1 class="post-title">
     <a class="post-title-link" href="https://deviljinc.github.io/post/blogspace">
       Github Pages + Hexo搭建个人技术博客
     </a>
   </h1>
   <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
       <span>2019-07-23</span>
     </span>
     
       <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="post-meta-divider pc-show">|</span>
+        <i class="fa fa-folder-o"></i>
         <span class="pc-show">分类于</span>
         
           
@@ -292,21 +314,22 @@
           
         
       </span>
+      <span class="post-meta-divider">|</span>
     
     <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
+      <i class="fa fa-clock-o"></i>
       <span>10分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">2326字数</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>2326<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
-    <div class="post-body">
-      <h2 id="用github-pages-hexo搭建个人技术博客"><strong>用Github Pages + Hexo搭建个人技术博客</strong></h2>
+      <div class="post-body">
+        
+          <h2 id="用github-pages-hexo搭建个人技术博客"><strong>用Github Pages + Hexo搭建个人技术博客</strong></h2>
 <br/>
 <h3 id="序">序</h3>
 <p>Hexo安装过后，默认的主题是<a href="https://github.com/hexojs/hexo-theme-landscape">landscape</a>，如果不喜欢，我们也可以进行更换。本文主要讲解NexT主题的使用。先看下我博客网站的效果吧：<a href="https://wjingc.github.io">wjingc.github.io</a>,我使用的主题是 Mist.</p>
@@ -317,38 +340,38 @@
 <li><a href="http://theme-next.iissnan.com/getting-started.html">Next</a></li>
 </ul>
 
-      <!--noindex-->
-      
-      <div class="post-button text-center">
-        <a class="btn" href="https://deviljinc.github.io/post/blogspace" rel="contents">
-          阅读全文 »
-        </a>
+        
+        
+        <div class="post-button text-center">
+          <a class="btn" href="https://deviljinc.github.io/post/blogspace" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
       </div>
-      <!--/noindex-->
       
     </div>
-    <footer class="post-footer">
-      <div class="post-eof"></div>
-    </footer>
   </article>
 
-  <article class="post-list-box post">
-    <header class="post-header">
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
   <h1 class="post-title">
     <a class="post-title-link" href="https://deviljinc.github.io/post/macweb">
       Mac 打造前端开发环境
     </a>
   </h1>
   <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
       <span>2019-07-19</span>
     </span>
     
       <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="post-meta-divider pc-show">|</span>
+        <i class="fa fa-folder-o"></i>
         <span class="pc-show">分类于</span>
         
           
@@ -382,21 +405,22 @@
           
         
       </span>
+      <span class="post-meta-divider">|</span>
     
     <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
+      <i class="fa fa-clock-o"></i>
       <span>4分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">865字数</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>865<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
-    <div class="post-body">
-      <h2 id="macos-mojave-打造高效率前端开发环境"><strong>macOS Mojave 打造高效率前端开发环境</strong></h2>
+      <div class="post-body">
+        
+          <h2 id="macos-mojave-打造高效率前端开发环境"><strong>macOS Mojave 打造高效率前端开发环境</strong></h2>
 <h3 id="br"><br/></h3>
 <h3 id="安装homebrew"><strong>安装Homebrew</strong></h3>
 <br/>
@@ -405,38 +429,38 @@
 <pre><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
 </code></pre>
 
-      <!--noindex-->
-      
-      <div class="post-button text-center">
-        <a class="btn" href="https://deviljinc.github.io/post/macweb" rel="contents">
-          阅读全文 »
-        </a>
+        
+        
+        <div class="post-button text-center">
+          <a class="btn" href="https://deviljinc.github.io/post/macweb" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
       </div>
-      <!--/noindex-->
       
     </div>
-    <footer class="post-footer">
-      <div class="post-eof"></div>
-    </footer>
   </article>
 
-  <article class="post-list-box post">
-    <header class="post-header">
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
   <h1 class="post-title">
     <a class="post-title-link" href="https://deviljinc.github.io/post/yuan-wang-dan">
       愿望单
     </a>
   </h1>
   <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
       <span>2019-07-03</span>
     </span>
     
       <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="post-meta-divider pc-show">|</span>
+        <i class="fa fa-folder-o"></i>
         <span class="pc-show">分类于</span>
         
           
@@ -458,48 +482,50 @@
           
         
       </span>
+      <span class="post-meta-divider">|</span>
     
     <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
+      <i class="fa fa-clock-o"></i>
       <span>1分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">3字数</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>3<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
-    <div class="post-body">
-      <p>SONY<br>
+      <div class="post-body">
+        
+          <p>SONY<br>
 Macbook Pro</p>
 
-      <!--noindex-->
+        
+        
+      </div>
       
     </div>
-    <footer class="post-footer">
-      <div class="post-eof"></div>
-    </footer>
   </article>
 
-  <article class="post-list-box post">
-    <header class="post-header">
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
   <h1 class="post-title">
     <a class="post-title-link" href="https://deviljinc.github.io/post">
       ...
     </a>
   </h1>
   <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
       <span>2019-07-01</span>
     </span>
     
       <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="post-meta-divider pc-show">|</span>
+        <i class="fa fa-folder-o"></i>
         <span class="pc-show">分类于</span>
         
           
@@ -533,47 +559,49 @@ Macbook Pro</p>
           
         
       </span>
+      <span class="post-meta-divider">|</span>
     
     <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
+      <i class="fa fa-clock-o"></i>
       <span>1分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">5字数</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>5<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
-    <div class="post-body">
-      <h4 id="哈哈哈哈哈">哈哈哈哈哈</h4>
+      <div class="post-body">
+        
+          <h4 id="哈哈哈哈哈">哈哈哈哈哈</h4>
 
-      <!--noindex-->
+        
+        
+      </div>
       
     </div>
-    <footer class="post-footer">
-      <div class="post-eof"></div>
-    </footer>
   </article>
 
-  <article class="post-list-box post">
-    <header class="post-header">
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
   <h1 class="post-title">
     <a class="post-title-link" href="https://deviljinc.github.io/post/web">
       Web
     </a>
   </h1>
   <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
       <span>2019-06-29</span>
     </span>
     
       <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="post-meta-divider pc-show">|</span>
+        <i class="fa fa-folder-o"></i>
         <span class="pc-show">分类于</span>
         
           
@@ -607,53 +635,54 @@ Macbook Pro</p>
           
         
       </span>
+      <span class="post-meta-divider">|</span>
     
     <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
+      <i class="fa fa-clock-o"></i>
       <span>1分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">3字数</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>3<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
-    <div class="post-body">
-      
-      <!--noindex-->
-      
-      <div class="post-button text-center">
-        <a class="btn" href="https://deviljinc.github.io/post/web" rel="contents">
-          阅读全文 »
-        </a>
+      <div class="post-body">
+        
+          
+        
+        
+        <div class="post-button text-center">
+          <a class="btn" href="https://deviljinc.github.io/post/web" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
       </div>
-      <!--/noindex-->
       
     </div>
-    <footer class="post-footer">
-      <div class="post-eof"></div>
-    </footer>
   </article>
 
-  <article class="post-list-box post">
-    <header class="post-header">
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
   <h1 class="post-title">
     <a class="post-title-link" href="https://deviljinc.github.io/post/dargon">
       Dargon
     </a>
   </h1>
   <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
       <span>2019-06-27</span>
     </span>
     
       <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="post-meta-divider pc-show">|</span>
+        <i class="fa fa-folder-o"></i>
         <span class="pc-show">分类于</span>
         
           
@@ -693,47 +722,49 @@ Macbook Pro</p>
           
         
       </span>
+      <span class="post-meta-divider">|</span>
     
     <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
+      <i class="fa fa-clock-o"></i>
       <span>1分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">8字数</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>8<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
-    <div class="post-body">
-      <h4 id="凡王之血必已剑终">凡王之血，必已剑终。</h4>
+      <div class="post-body">
+        
+          <h4 id="凡王之血必已剑终">凡王之血，必已剑终。</h4>
 
-      <!--noindex-->
+        
+        
+      </div>
       
     </div>
-    <footer class="post-footer">
-      <div class="post-eof"></div>
-    </footer>
   </article>
 
-  <article class="post-list-box post">
-    <header class="post-header">
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
   <h1 class="post-title">
     <a class="post-title-link" href="https://deviljinc.github.io/post/tu-long-shao-nian">
       屠龙少年
     </a>
   </h1>
   <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
       <span>2019-06-26</span>
     </span>
     
       <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="post-meta-divider pc-show">|</span>
+        <i class="fa fa-folder-o"></i>
         <span class="pc-show">分类于</span>
         
           
@@ -767,48 +798,50 @@ Macbook Pro</p>
           
         
       </span>
+      <span class="post-meta-divider">|</span>
     
     <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
+      <i class="fa fa-clock-o"></i>
       <span>1分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">12字数</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>12<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
-    <div class="post-body">
-      <h4 id="愿你出走半生">愿你出走半生</h4>
+      <div class="post-body">
+        
+          <h4 id="愿你出走半生">愿你出走半生</h4>
 <h4 id="归来仍是少年">归来仍是少年</h4>
 
-      <!--noindex-->
+        
+        
+      </div>
       
     </div>
-    <footer class="post-footer">
-      <div class="post-eof"></div>
-    </footer>
   </article>
 
-  <article class="post-list-box post">
-    <header class="post-header">
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
   <h1 class="post-title">
     <a class="post-title-link" href="https://deviljinc.github.io/post/first-doc">
       First Doc
     </a>
   </h1>
   <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
       <span>2019-06-25</span>
     </span>
     
       <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="post-meta-divider pc-show">|</span>
+        <i class="fa fa-folder-o"></i>
         <span class="pc-show">分类于</span>
         
           
@@ -836,48 +869,50 @@ Macbook Pro</p>
           
         
       </span>
+      <span class="post-meta-divider">|</span>
     
     <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
+      <i class="fa fa-clock-o"></i>
       <span>1分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">2字数</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>2<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
-    <div class="post-body">
-      <h4 id="coffee">Coffee</h4>
+      <div class="post-body">
+        
+          <h4 id="coffee">Coffee</h4>
 <h4 id="java">Java</h4>
 
-      <!--noindex-->
+        
+        
+      </div>
       
     </div>
-    <footer class="post-footer">
-      <div class="post-eof"></div>
-    </footer>
   </article>
 
-  <article class="post-list-box post">
-    <header class="post-header">
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
   <h1 class="post-title">
     <a class="post-title-link" href="https://deviljinc.github.io/post/first-vue">
       First Vue
     </a>
   </h1>
   <div class="post-meta">
-    <span class="meta-item">
-      <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
       <span>2019-06-23</span>
     </span>
     
       <span class="meta-item">
-        <span class="post-meta-divider">|</span>
-        <i class="iconfont icon-folder_open_alt"></i>
+        <span class="post-meta-divider pc-show">|</span>
+        <i class="fa fa-folder-o"></i>
         <span class="pc-show">分类于</span>
         
           
@@ -911,32 +946,33 @@ Macbook Pro</p>
           
         
       </span>
+      <span class="post-meta-divider">|</span>
     
     <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-time"></i>
+      <i class="fa fa-clock-o"></i>
       <span>1分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
-      <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">2字数</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>2<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
-    <div class="post-body">
-      <h4 id="黑日">黑日</h4>
+      <div class="post-body">
+        
+          <h4 id="黑日">黑日</h4>
 
-      <!--noindex-->
+        
+        
+      </div>
       
     </div>
-    <footer class="post-footer">
-      <div class="post-eof"></div>
-    </footer>
   </article>
   
               
-<div class="page">
+              
+<div class="page bg-color">
   <ul class="pagination-ul">
     
     
@@ -957,7 +993,7 @@ Macbook Pro</p>
     
       <li class="pagination-dir">
         <a href="/page/2">
-          <i class="iconfont icon-angle_right"></i>
+          <i class="fa fa-angle-right"></i>
         </a>
       </li>
     
@@ -970,27 +1006,73 @@ Macbook Pro</p>
       <div class="footer-box">
   <footer class="footer">
     <div class="copyright">
-      © 2019-2020 <i class="iconfont icon-heart"></i> HsxyHao
+      © 2019-2020 <i class="fa fa-heart"></i> HsxyHao
     </div>
     <div class="poweredby">
-      <div class="power-left">Power By<a href="https://github.com/hsxyhao"> HsxyHao</a></div>
-      <div>Copy<a href="https://github.com/iissnan/hexo-theme-next"> Hexo Next Theme</a></div>
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
     </div>
   </footer>
-  <div class="back-to-top" id="back_to_top">
-    <i class="iconfont icon-arrow_up"></i>
+  
+  
+  <div class="gemini back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
     <span class="scrollpercent">
-      <span id="back_to_top_text">100</span>%
+      <span id="back_to_top_text">0</span>%
     </span>
+    
+  </div>
+  
+  
+    <link rel="stylesheet" href="/media/live2d/histoire/css/live2d.css" />
+<div class="box-scale">
+  <div id="landlord" style="left:5px;bottom:0px;" data-key="">
+    <div class="message" style="opacity:0"></div>
+    <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
+    <div class="live_talk_input_body">
+      <div class="live_talk_input_name_body">
+        <input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off" placeholder="你的名字" />
+      </div>
+      <div class="live_talk_input_text_body">
+        <input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off" placeholder="要和我聊什么呀？"/>
+        <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
+      </div>
+    </div>
+    <input name="live_talk" id="live_talk" value="1" type="hidden" />
+    <div class="live_ico_box">
+      <div class="live_ico_item type_info" id="showInfoBtn"></div>
+      <div class="live_ico_item type_talk" id="showTalkBtn"></div>
+      
+      <div class="live_ico_item type_youdu" id="youduButton"></div>
+      <div class="live_ico_item type_quit" id="hideButton"></div>
+      <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
+      <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
+      <input id="duType" value="douqilai" type="hidden">
+      
+    </div>
   </div>
 </div>
-
+<div id="open_live2d">召唤伊斯特瓦尔</div>
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+var message_Path = '/media/live2d/histoire/';
+let landlord = document.querySelector('#landlord');
+var apiKey = landlord.dataset.key;
+</script>
+<script type="text/javascript" src="/media/live2d/histoire/js/live2d.js"></script>
+<script type="text/javascript" src="/media/live2d/histoire/js/message.js"></script>
+  
+  
+</div>
 <script>
 
+  let sideBarOpen = 'sidebar-open';
   let body = document.body;
-
   let back2Top = document.querySelector('#back_to_top'),
-  back2TopText = document.querySelector('#back_to_top_text');
+  back2TopText = document.querySelector('#back_to_top_text'),
+  drawerBox = document.querySelector('#drawer_box'),
+  rightSideBar = document.querySelector('.sidebar'),
+  viewport = document.querySelector('body');
 
   function scrollAnimation(currentY, targetY) {
    
@@ -1009,21 +1091,108 @@ Macbook Pro</p>
   }
 
   back2Top.addEventListener("click", function(e) {
-    scrollAnimation(body.scrollTop, 0);
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
     e.stopPropagation();
     return false;
   });
   
   window.addEventListener('scroll', function(e) {
-    let percent = body.scrollTop / (body.scrollHeight - body.clientHeight) * 100;
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
     if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
       back2Top.classList.add('back-top-active');
     }
     if (percent == 0) {
       back2Top.classList.remove('back-top-active');
     }
-    back2TopText.textContent = Math.floor(percent);
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
   });
+
+  
+  let hasCacu = false;
+  window.onresize = function() {
+    if (window.width > 991) {
+      calcuHeight();
+    } else {
+      hasCacu = false;
+    }
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+  
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function() {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, transitionDir,{ });
+          }
+        })
+        window.Velocity(viewport, openProp,{
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp ,{
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
 
   // 代码高亮
   hljs.initHighlightingOnLoad();
