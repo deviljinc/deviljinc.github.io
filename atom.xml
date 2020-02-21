@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://deviljinc.github.io</id>
     <title>Coding Forever</title>
-    <updated>2020-02-20T14:13:40.559Z</updated>
+    <updated>2020-02-21T15:14:30.629Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://deviljinc.github.io"/>
     <link rel="self" href="https://deviljinc.github.io/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2020, Coding Forever</rights>
     <entry>
         <title type="html"><![CDATA[小米Pro笔记本 Hackintosh MacOS Mojave 10.14.4 安装教程]]></title>
-        <id>https://deviljinc.github.io/post/Hackintosh</id>
-        <link href="https://deviljinc.github.io/post/Hackintosh">
+        <id>https://deviljinc.github.io/post/Hackintosh/</id>
+        <link href="https://deviljinc.github.io/post/Hackintosh/">
         </link>
         <updated>2019-07-24T16:16:04.000Z</updated>
         <summary type="html"><![CDATA[<h3 id="前言"><strong>前言</strong></h3>
@@ -534,8 +534,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Github Pages + Hexo搭建个人技术博客]]></title>
-        <id>https://deviljinc.github.io/post/blogspace</id>
-        <link href="https://deviljinc.github.io/post/blogspace">
+        <id>https://deviljinc.github.io/post/blogspace/</id>
+        <link href="https://deviljinc.github.io/post/blogspace/">
         </link>
         <updated>2019-07-23T12:34:55.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="用github-pages-hexo搭建个人技术博客"><strong>用Github Pages + Hexo搭建个人技术博客</strong></h2>
@@ -866,8 +866,8 @@ scheme: Mist
     </entry>
     <entry>
         <title type="html"><![CDATA[Mac 打造前端开发环境]]></title>
-        <id>https://deviljinc.github.io/post/macweb</id>
-        <link href="https://deviljinc.github.io/post/macweb">
+        <id>https://deviljinc.github.io/post/macweb/</id>
+        <link href="https://deviljinc.github.io/post/macweb/">
         </link>
         <updated>2019-07-19T03:01:40.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="macos-mojave-打造高效率前端开发环境"><strong>macOS Mojave 打造高效率前端开发环境</strong></h2>
@@ -949,8 +949,8 @@ scheme: Mist
     </entry>
     <entry>
         <title type="html"><![CDATA[愿望单]]></title>
-        <id>https://deviljinc.github.io/post/yuan-wang-dan</id>
-        <link href="https://deviljinc.github.io/post/yuan-wang-dan">
+        <id>https://deviljinc.github.io/post/yuan-wang-dan/</id>
+        <link href="https://deviljinc.github.io/post/yuan-wang-dan/">
         </link>
         <updated>2019-07-03T14:51:52.000Z</updated>
         <summary type="html"><![CDATA[<p>SONY<br>
@@ -963,8 +963,8 @@ Macbook Pro</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[...]]></title>
-        <id>https://deviljinc.github.io/post</id>
-        <link href="https://deviljinc.github.io/post">
+        <id>https://deviljinc.github.io/post/</id>
+        <link href="https://deviljinc.github.io/post/">
         </link>
         <updated>2019-07-01T14:21:11.000Z</updated>
         <summary type="html"><![CDATA[<h4 id="哈哈哈哈哈">哈哈哈哈哈</h4>
@@ -975,8 +975,8 @@ Macbook Pro</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Web]]></title>
-        <id>https://deviljinc.github.io/post/web</id>
-        <link href="https://deviljinc.github.io/post/web">
+        <id>https://deviljinc.github.io/post/web/</id>
+        <link href="https://deviljinc.github.io/post/web/">
         </link>
         <updated>2019-06-29T12:14:37.000Z</updated>
         <content type="html"><![CDATA[<h4 id="life-is-struggle">Life is struggle</h4>
@@ -984,8 +984,8 @@ Macbook Pro</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Dargon]]></title>
-        <id>https://deviljinc.github.io/post/dargon</id>
-        <link href="https://deviljinc.github.io/post/dargon">
+        <id>https://deviljinc.github.io/post/dargon/</id>
+        <link href="https://deviljinc.github.io/post/dargon/">
         </link>
         <updated>2019-06-27T15:03:38.000Z</updated>
         <summary type="html"><![CDATA[<h4 id="凡王之血必已剑终">凡王之血，必已剑终。</h4>
@@ -996,8 +996,8 @@ Macbook Pro</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[屠龙少年]]></title>
-        <id>https://deviljinc.github.io/post/tu-long-shao-nian</id>
-        <link href="https://deviljinc.github.io/post/tu-long-shao-nian">
+        <id>https://deviljinc.github.io/post/tu-long-shao-nian/</id>
+        <link href="https://deviljinc.github.io/post/tu-long-shao-nian/">
         </link>
         <updated>2019-06-26T14:26:54.000Z</updated>
         <summary type="html"><![CDATA[<h4 id="愿你出走半生">愿你出走半生</h4>
@@ -1010,8 +1010,8 @@ Macbook Pro</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[First Doc]]></title>
-        <id>https://deviljinc.github.io/post/first-doc</id>
-        <link href="https://deviljinc.github.io/post/first-doc">
+        <id>https://deviljinc.github.io/post/first-doc/</id>
+        <link href="https://deviljinc.github.io/post/first-doc/">
         </link>
         <updated>2019-06-25T15:06:54.000Z</updated>
         <summary type="html"><![CDATA[<h4 id="coffee">Coffee</h4>
@@ -1024,8 +1024,8 @@ Macbook Pro</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[First Vue]]></title>
-        <id>https://deviljinc.github.io/post/first-vue</id>
-        <link href="https://deviljinc.github.io/post/first-vue">
+        <id>https://deviljinc.github.io/post/first-vue/</id>
+        <link href="https://deviljinc.github.io/post/first-vue/">
         </link>
         <updated>2019-06-23T13:57:39.000Z</updated>
         <summary type="html"><![CDATA[<h4 id="黑日">黑日</h4>
